@@ -4,8 +4,9 @@ require 'slack-notifier'
 require 'uri'
 require 'json'
 
-json = 
-  '{"name":"Roxy\'s Gourmet Grilled Cheese 1","day":"Friday","time":"Lunch","location":"Greenway, Dewey Square Park Plaza"}'
+data_hash = 
+  {name:"Roxy's Gourmet Grilled Cheese 1", day:"Friday", time:"Lunch",location:"Greenway, Dewey Square Park Plaza"},
+  {name:"Roxy's Gourmet Grilled Cheese 1", day:"Friday", time:"Lunch",location:"Greenway, Dewey Square Park Plaza"}
 
 
 webhook_url = IronWorker.config['webhook_url']
@@ -24,9 +25,8 @@ date = Date.today
 day = date.strftime('%A')
 text = "Foodtruck options for #{date.strftime('%A, %B %e')}:"
 
-data_hash = JSON.parse(json)
-data_hash.each do |k,v|
-  puts 'foo'
+data_hash.each do |h|
+  puts h[:location]
 end
 
 notifier = Slack::Notifier.new webhook_url
