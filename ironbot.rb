@@ -2,6 +2,11 @@ require_relative 'bundle/bundler/setup'
 require 'iron_worker'
 require 'slack-notifier'
 require 'uri'
+require 'json'
+
+json = 
+  '{"name":"Roxy\'s Gourmet Grilled Cheese 1","day":"Friday","time":"Lunch","location":"Greenway, Dewey Square Park Plaza"}'
+
 
 webhook_url = IronWorker.config['webhook_url']
 payload = IronWorker.payload
@@ -15,7 +20,14 @@ parsed.each do |p|
 end
 channel = "\##{channel}" unless channel[0] == '#'
 
-text = "Hello #{channel}!"
+date = Date.today
+day = date.strftime('%A')
+text = "Foodtruck options for #{date.strftime('%A, %B %e')}:"
+
+data_hash = JSON.parse(json)
+data_hash.each do |k,v|
+  puts 'foo'
+end
 
 notifier = Slack::Notifier.new webhook_url
 notifier.channel  = channel
