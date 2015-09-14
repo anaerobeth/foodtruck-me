@@ -25,8 +25,14 @@ date = Date.today
 day = date.strftime('%A')
 text = "Foodtruck options for #{date.strftime('%A, %B %e')}:"
 
-data_hash.each do |h|
-  puts h[:location]
+file = File.read('short.json')
+data = JSON.parse(file)
+data.each do |k, v|
+  v.each do |truck|
+    if truck['day'] == day
+      puts "#{truck['name']} - #{truck['location']}"
+    end
+  end
 end
 
 notifier = Slack::Notifier.new webhook_url

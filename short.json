@@ -1,9 +1,13 @@
-{"name":"Roxy's Gourmet Grilled Cheese 1","day":"Friday","time":"Lunch","location":"Greenway, Dewey Square Park Plaza"},
-{"name":"Roxy's Gourmet Grilled Cheese 1","day":"Monday","time":"Lunch","location":"Greenway, Dewey Square Park Plaza"},
-{"name":"Roxy's Gourmet Grilled Cheese 1","day":"Monday","time":"Lunch","location":"East, on Commonwealth Ave at Silber Way"},
-{"name":"Roxy's Gourmet Grilled Cheese 1","day":"Saturday","time":"Lunch","location":"Cleveland Circle, Cassidy Park at Beacon St"},
-{"name":"Roxy's Gourmet Grilled Cheese 1","day":"Sunday","time":"Lunch","location":"Cleveland Circle, Cassidy Park at Beacon St"},
-{"name":"Roxy's Gourmet Grilled Cheese 1","day":"Wednesday","time":"Lunch","location":"Boston Public Library"},
-{"name":"Roxy's Gourmet Grilled Cheese 1","day":"Wednesday","time":"Lunch","location":"Greenway, Fort Point Park"},
-{"name":"Roxy's Gourmet Grilled Cheese 1","day":"Wednesday","time":"Lunch","location":"Greenway, Rowes Wharf Plaza"},
-{"name":"Roxy's Gourmet Grilled Cheese 1","day":"Wednesday","time":"Dinner","location":"East, on Commonwealth Ave at Silber Way"}
+{
+  "head": [
+    {"name":"Roxy's Gourmet Grilled Cheese 1","day":"Friday","time":"Lunch","location":"Greenway, Dewey Square Park Plaza"},
+    {"name":"Roxy's Gourmet Grilled Cheese 1","day":"Monday","time":"Lunch","location":"Greenway, Dewey Square Park Plaza"},
+    {"name":"Roxy's Gourmet Grilled Cheese 1","day":"Monday","time":"Lunch","location":"East, on Commonwealth Ave at Silber Way"},
+    {"name":"Roxy's Gourmet Grilled Cheese 1","day":"Saturday","time":"Lunch","location":"Cleveland Circle, Cassidy Park at Beacon St"},
+    {"name":"Roxy's Gourmet Grilled Cheese 1","day":"Sunday","time":"Lunch","location":"Cleveland Circle, Cassidy Park at Beacon St"},
+    {"name":"Roxy's Gourmet Grilled Cheese 1","day":"Wednesday","time":"Lunch","location":"Boston Public Library"},
+    {"name":"Roxy's Gourmet Grilled Cheese 1","day":"Wednesday","time":"Lunch","location":"Greenway, Fort Point Park"},
+    {"name":"Roxy's Gourmet Grilled Cheese 1","day":"Wednesday","time":"Lunch","location":"Greenway, Rowes Wharf Plaza"},
+    {"name":"Roxy's Gourmet Grilled Cheese 1","day":"Wednesday","time":"Dinner","location":"East, on Commonwealth Ave at Silber Way"}
+  ]
+}
